@@ -1,0 +1,1 @@
+export const ADMIN_USER_ID = '89939161'

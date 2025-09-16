@@ -1,0 +1,10 @@
+{
+  "eslint.validate": [
+    "javascript",
+    "typescript" // Enable .ts
+  ],
+  "editor.tabSize": 4,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit"
+  }
+}

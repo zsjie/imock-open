@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    "target": "es2021",
+    "lib": ["es2021", "dom"],
+    "module": "commonjs",
+    "removeComments": false,
+    "preserveConstEnums": true,
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "noImplicitAny": false,
+    "allowSyntheticDefaultImports": true,
+    "outDir": "./dist",
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "strictNullChecks": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "sourceMap": true,
+    "baseUrl": ".",
+    "rootDir": "./src",
+    "allowJs": false,
+    "paths": {
+      "~/*": ["./src/*"]
+    }
+  },
+  "include": ["src", "test"],
+  "exclude": [
+    "**/__mocks__/*",
+    "__tests__",
+    "node_modules/",
+    "dist",
+    "**/*.test.ts",
+    "**/*.spec.ts",
+    "package.json"
+  ],
+  "compileOnSave": true
+}

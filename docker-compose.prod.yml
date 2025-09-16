@@ -1,0 +1,81 @@
+services:
+  # 数据库服务
+  mysql:
+    image: mysql:8.0
+    container_name: imock-mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:-rootpassword}
+      MYSQL_DATABASE: ${MYSQL_DATABASE:-imock}
+      MYSQL_USER: ${MYSQL_USER:-imock}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD:-imockpassword}
+    ports:
+      - "${MYSQL_PORT:-3306}:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+      - ./imock-server/init.sql:/docker-entrypoint-initdb.d/init.sql
+    networks:
+      - imock-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "root", "-p${MYSQL_ROOT_PASSWORD:-rootpassword}"]
+      timeout: 20s
+      retries: 10
+
+  # 后端服务
+  imock-server:
+    build:
+      context: ./imock-server
+      dockerfile: Dockerfile
+      target: production
+    container_name: imock-server
+    environment:
+      DATABASE_URL: "mysql://${MYSQL_USER:-imock}:${MYSQL_PASSWORD:-imockpassword}@mysql:3306/${MYSQL_DATABASE:-imock}"
+      JWT_SECRET: ${JWT_SECRET:-your-jwt-secret-key}
+      RUNTIME_ENV: ${RUNTIME_ENV:-production}
+      STATIC_DIR: "./public"
+      ORIGIN: ${ORIGIN:-http://localhost:3010}
+      # AI Mock 功能（可选）
+      QWEN_API_KEY: ${QWEN_API_KEY}
+      # 邮件服务（可选）
+      EMAIL_HOST: ${EMAIL_HOST}
+      EMAIL_PORT: ${EMAIL_PORT:-587}
+      EMAIL_USER: ${EMAIL_USER}
+      EMAIL_PASS: ${EMAIL_PASS}
+    ports:
+      - "${SERVER_PORT:-6060}:6060"
+    depends_on:
+      mysql:
+        condition: service_healthy
+    networks:
+      - imock-network
+    restart: unless-stopped
+    volumes:
+      - server_public:/app/public
+
+  # 前端服务
+  imock-web:
+    build:
+      context: ./imock-web
+      dockerfile: Dockerfile
+      target: production
+      args:
+        # Vite 构建时环境变量
+        RUNTIME_ENV: ${RUNTIME_ENV:-production}
+        MOCK_ENDPOINT: ${MOCK_ENDPOINT:-http://imock-server:6060/server/proxy-api}
+        SOCKET_URL: ${SOCKET_URL:-http://imock-server:6060}
+    container_name: imock-web
+    ports:
+      - "${WEB_PORT:-3010}:3010"
+    depends_on:
+      - imock-server
+    networks:
+      - imock-network
+    restart: unless-stopped
+
+volumes:
+  mysql_data:
+  server_public:
+
+networks:
+  imock-network:
+    driver: bridge

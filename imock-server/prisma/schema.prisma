@@ -1,0 +1,109 @@
+generator client {
+  provider        = "prisma-client-js"
+  previewFeatures = ["relationJoins"]
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model userMocks {
+  id         Int       @id @default(autoincrement())
+  userId     String    @db.VarChar(16)
+  urlHash    String    @db.VarChar(32)
+  url        String    @db.Text
+  name       String?   @db.VarChar(64)
+  headers    String?   @db.Text
+  body       String?   @db.Text
+  statusCode String?   @db.VarChar(3)
+  method     String?   @db.VarChar(12)
+  createdAt  DateTime? @default(now()) @db.Timestamp(0)
+  updatedAt  DateTime? @default(now()) @db.Timestamp(0)
+  running    Boolean?  @default(false)
+  deleted    Boolean?  @default(false)
+  delay      Int?      @default(0)
+
+  description    String?   @db.Text
+  requestSchema  String?   @db.Text
+  responseSchema String?   @db.Text
+  source         String?   @default("manual") @db.VarChar(16)  // manual=自建, openapi=openapi导入
+  sourceVersion  String?   @db.VarChar(16)
+
+  aiMockBody     String?   @db.Text // ai 生成的 body
+  aiMockRunning  Boolean?  @default(false) // 是否正在使用 ai mock
+
+  aiOverride     Boolean?  @default(false) // 是否使用 ai 覆盖 fallback url
+
+  @@index([userId, urlHash, method], map: "userId")
+}
+
+model authToken {
+  id        Int      @id @default(autoincrement())
+  userId    String   @db.VarChar(16)
+  token     String   @unique(map: "token") @db.VarChar(128)
+  deviceId  String   @db.VarChar(128)
+  source    String   @default("PC") @db.VarChar(16)
+  createdAt DateTime @default(now()) @db.Timestamp(0)
+  expiresAt DateTime @default(now()) @db.Timestamp(0)
+  user      user     @relation(fields: [userId], references: [userId], onDelete: NoAction, onUpdate: NoAction, map: "authtoken_ibfk_1")
+
+  @@index([token], map: "token_2")
+  @@index([userId, deviceId], map: "userId")
+}
+
+model user {
+  id         Int         @id @default(autoincrement())
+  userId     String      @unique(map: "userId") @db.VarChar(16)
+  nickname   String?     @db.VarChar(64)
+  avatar     String?     @db.VarChar(255)
+  email      String?     @unique(map: "email") @db.VarChar(64)
+  createdAt  DateTime?   @default(now()) @db.Timestamp(0)
+  updatedAt  DateTime?   @default(now()) @db.Timestamp(0)
+  openId     String?     @db.VarChar(32)
+  cancelled  Boolean?    @default(false)
+  verified   Boolean?    @default(false)
+  password   String?     @db.VarChar(128)
+  authTokens authToken[]
+
+  @@index([openId], map: "openId")
+  @@index([email], map: "email_2")
+  @@index([userId], map: "userId_2")
+}
+
+
+model emailCode {
+  id        Int       @id @default(autoincrement())
+  email     String    @db.VarChar(64)
+  code      String    @db.VarChar(6)
+  createdAt DateTime? @default(now()) @db.Timestamp(0)
+  updatedAt DateTime? @default(now()) @db.Timestamp(0)
+
+  @@index([email], map: "email")
+}
+
+model mockUrls {
+  id        Int       @id @default(autoincrement())
+  userId    String    @db.VarChar(16)
+  url       String    @db.Text
+  env       String    @default("test") @db.VarChar(16)
+  running   Boolean?  @default(false)
+  createdAt DateTime? @default(now()) @db.Timestamp(0)
+  updatedAt DateTime? @default(now()) @db.Timestamp(0)
+
+  @@unique([userId, env], name: "userId_env", map: "userId_env")
+  @@index([userId], map: "userId")
+}
+
+
+model requestShare {
+    id        Int      @id @default(autoincrement())
+    shareId   String   @unique
+    userId    String
+    data      String   @db.Text
+    expiredAt DateTime @default(now()) @db.Timestamp(0)
+    createdAt DateTime @default(now()) @db.Timestamp(0)
+
+    @@index([expiredAt])
+    @@map("request_shares")
+}

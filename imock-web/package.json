@@ -1,0 +1,81 @@
+{
+  "browserslist": {
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ],
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ]
+  },
+  "dependencies": {
+    "@ant-design/icons": "^5.4.0",
+    "@ant-design/pro-components": "^2.7.15",
+    "@ant-design/pro-form": "^2.32.0",
+    "@monaco-editor/react": "^4.6.0",
+    "@uiw/react-split": "^5.9.3",
+    "ahooks": "^3.8.1",
+    "antd": "^5.20.3",
+    "axios": "^1.7.7",
+    "classnames": "^2.5.1",
+    "copy-to-clipboard": "^3.3.3",
+    "dayjs": "^1.11.13",
+    "highlight.js": "^11.10.0",
+    "lodash": "^4.17.21",
+    "qrcode.react": "^4.0.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.26.1",
+    "socket.io-client": "^4.7.5",
+    "tailwindcss-animate": "^1.0.7",
+    "web-vitals": "^2.1.0",
+    "zustand": "^4.5.5"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.11.0",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^13.0.0",
+    "@testing-library/user-event": "^13.2.1",
+    "@types/axios": "^0.14.0",
+    "@types/eslint__js": "^8.42.3",
+    "@types/jest": "^27.0.1",
+    "@types/lodash": "^4.17.7",
+    "@types/node": "^20.19.16",
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "@vitejs/plugin-react": "^5.0.2",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^9.11.0",
+    "eslint-plugin-simple-import-sort": "^12.1.1",
+    "postcss": "^8.4.42",
+    "tailwindcss": "^3.4.10",
+    "typescript": "^4.4.2",
+    "typescript-eslint": "^8.6.0",
+    "vite": "^7.1.5",
+    "vite-plugin-monaco-editor": "^1.1.0"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "license": "SEE LICENSE IN LICENSE",
+  "name": "imock-web",
+  "private": true,
+  "scripts": {
+    "build": "vite build",
+    "build:prod": "vite build --mode production",
+    "build:test": "vite build --mode test",
+    "clean": "rm -rf dist/ node_modules/.cache",
+    "dev": "vite --port 3010",
+    "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}'",
+    "lint:fix": "eslint 'src/**/*.{js,jsx,ts,tsx}' --fix",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit"
+  },
+  "version": "0.1.0"
+}

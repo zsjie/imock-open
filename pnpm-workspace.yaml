@@ -1,0 +1,5 @@
+packages:
+  - 'imock-server'
+  - 'imock-web'
+  # 如果将来需要添加共享包，可以使用通配符
+  # - 'packages/*'

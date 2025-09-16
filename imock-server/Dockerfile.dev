@@ -1,0 +1,38 @@
+# 开发环境 Dockerfile
+FROM node:22-alpine
+
+# 设置工作目录
+WORKDIR /app
+
+# 安装必要的系统依赖：prisma 依赖 openssl
+RUN apk add --no-cache openssl
+
+# 启用 Corepack 并固定 pnpm 版本
+RUN corepack enable && corepack prepare pnpm@8.15.0 --activate
+
+# 复制 package.json 和相关配置文件
+COPY package.json ./
+COPY pnpm-lock.yaml* ./
+COPY .npmrc ./
+
+# 安装依赖（包括开发依赖）
+RUN --mount=type=cache,target=/root/.pnpm-store pnpm install
+
+# 复制 Prisma 配置
+COPY prisma ./prisma
+
+# 生成 Prisma Client
+RUN pnpm db:generate
+
+# 复制 dev.sh 脚本并设置执行权限
+COPY dev.sh ./
+RUN chmod +x ./dev.sh
+
+# 创建必要的目录
+RUN mkdir -p ./public ./src ./dist
+
+# 暴露端口
+EXPOSE 6060
+
+# 开发环境启动命令 - 使用 tsc-watch 进行热更新
+CMD ["pnpm", "dev"]

@@ -1,0 +1,234 @@
+[
+    {
+        "amount": 1234.56,
+        "billNumber": "B150000201607101232",
+        "createdAt": "2023-10-01T10:00:00Z",
+        "id": "150000201607101232",
+        "image": "http://dummyimage.com/120x90",
+        "status": "PAID",
+        "updatedAt": "2023-10-01T12:00:00Z",
+        "userId": "150000201607101232"
+    },
+    {
+        "amount": 789.12,
+        "billNumber": "B460000197704097777",
+        "createdAt": "2023-10-02T11:00:00Z",
+        "id": "460000197704097777",
+        "image": "http://dummyimage.com/240x400",
+        "status": "UNPAID",
+        "updatedAt": "2023-10-02T13:00:00Z",
+        "userId": "460000197704097777"
+    },
+    {
+        "amount": 345.67,
+        "billNumber": "B340000202406151364",
+        "createdAt": "2023-10-03T12:00:00Z",
+        "id": "340000202406151364",
+        "image": "http://dummyimage.com/120x600",
+        "status": "PAID",
+        "updatedAt": "2023-10-03T14:00:00Z",
+        "userId": "340000202406151364"
+    },
+    {
+        "amount": 987.65,
+        "billNumber": "B13000019810806554X",
+        "createdAt": "2023-10-04T13:00:00Z",
+        "id": "13000019810806554X",
+        "image": "http://dummyimage.com/120x600",
+        "status": "UNPAID",
+        "updatedAt": "2023-10-04T15:00:00Z",
+        "userId": "13000019810806554X"
+    },
+    {
+        "amount": 654.32,
+        "billNumber": "B510000202305022469",
+        "createdAt": "2023-10-05T14:00:00Z",
+        "id": "510000202305022469",
+        "image": "http://dummyimage.com/120x60",
+        "status": "PAID",
+        "updatedAt": "2023-10-05T16:00:00Z",
+        "userId": "510000202305022469"
+    },
+    {
+        "amount": 321.45,
+        "billNumber": "B81000020180913070X",
+        "createdAt": "2023-10-06T15:00:00Z",
+        "id": "81000020180913070X",
+        "image": "http://dummyimage.com/336x280",
+        "status": "UNPAID",
+        "updatedAt": "2023-10-06T17:00:00Z",
+        "userId": "81000020180913070X"
+    },
+    {
+        "amount": 987.01,
+        "billNumber": "B330000198005050000",
+        "createdAt": "2023-10-07T16:00:00Z",
+        "id": "330000198005050000",
+        "image": "http://dummyimage.com/180x150",
+        "status": "PAID",
+        "updatedAt": "2023-10-07T18:00:00Z",
+        "userId": "330000198005050000"
+    },
+    {
+        "amount": 456.78,
+        "billNumber": "B650000199801305149",
+        "createdAt": "2023-10-08T17:00:00Z",
+        "id": "650000199801305149",
+        "image": "http://dummyimage.com/88x31",
+        "status": "UNPAID",
+        "updatedAt": "2023-10-08T19:00:00Z",
+        "userId": "650000199801305149"
+    },
+    {
+        "amount": 123.45,
+        "billNumber": "B820000202411199850",
+        "createdAt": "2023-10-09T18:00:00Z",
+        "id": "820000202411199850",
+        "image": "http://dummyimage.com/336x280",
+        "status": "PAID",
+        "updatedAt": "2023-10-09T20:00:00Z",
+        "userId": "820000202411199850"
+    },
+    {
+        "amount": 678.9,
+        "billNumber": "B430000197401102692",
+        "createdAt": "2023-10-10T19:00:00Z",
+        "id": "430000197401102692",
+        "image": "http://dummyimage.com/234x60",
+        "status": "UNPAID",
+        "updatedAt": "2023-10-10T21:00:00Z",
+        "userId": "430000197401102692"
+    },
+    {
+        "amount": 1234.56,
+        "billNumber": "B123456789",
+        "createdAt": "2023-10-01T12:00:00Z",
+        "currency": "CNY",
+        "id": "440000198806151667",
+        "image": "http://dummyimage.com/180x150",
+        "status": "PAID",
+        "updatedAt": "2023-10-02T12:00:00Z",
+        "userId": "440000198806151667"
+    },
+    {
+        "amount": 987.65,
+        "billNumber": "B987654321",
+        "createdAt": "2023-10-01T12:00:00Z",
+        "currency": "USD",
+        "id": "220000199707242428",
+        "image": "http://dummyimage.com/468x60",
+        "status": "UNPAID",
+        "updatedAt": "2023-10-02T12:00:00Z",
+        "userId": "220000199707242428"
+    },
+    {
+        "amount": 123.45,
+        "billNumber": "BILL990000202105269562",
+        "createdAt": "2023-10-01T12:00:00Z",
+        "currency": "CNY",
+        "id": "990000202105269562",
+        "image": "http://dummyimage.com/120x600",
+        "status": "PAID",
+        "updatedAt": "2023-10-01T12:00:00Z",
+        "userId": "990000202105269562"
+    },
+    {
+        "amount": 234.56,
+        "billNumber": "BILL110000201411061235",
+        "createdAt": "2023-10-01T12:00:00Z",
+        "currency": "USD",
+        "id": "110000201411061235",
+        "image": "http://dummyimage.com/250x250",
+        "status": "UNPAID",
+        "updatedAt": "2023-10-01T12:00:00Z",
+        "userId": "110000201411061235"
+    },
+    {
+        "amount": 345.67,
+        "billNumber": "BILL110000198701191332",
+        "createdAt": "2023-10-01T12:00:00Z",
+        "currency": "EUR",
+        "id": "110000198701191332",
+        "image": "http://dummyimage.com/250x250",
+        "status": "PAID",
+        "updatedAt": "2023-10-01T12:00:00Z",
+        "userId": "110000198701191332"
+    },
+    {
+        "amount": 456.78,
+        "billNumber": "BILL630000197610273516",
+        "createdAt": "2023-10-01T12:00:00Z",
+        "currency": "JPY",
+        "id": "630000197610273516",
+        "image": "http://dummyimage.com/728x90",
+        "status": "PAID",
+        "updatedAt": "2023-10-01T12:00:00Z",
+        "userId": "630000197610273516"
+    },
+    {
+        "amount": 567.89,
+        "billNumber": "BILL21000019730616371X",
+        "createdAt": "2023-10-01T12:00:00Z",
+        "currency": "GBP",
+        "id": "21000019730616371X",
+        "image": "http://dummyimage.com/336x280",
+        "status": "UNPAID",
+        "updatedAt": "2023-10-01T12:00:00Z",
+        "userId": "21000019730616371X"
+    },
+    {
+        "amount": 678.9,
+        "billNumber": "BILL220000198905010279",
+        "createdAt": "2023-10-01T12:00:00Z",
+        "currency": "AUD",
+        "id": "220000198905010279",
+        "image": "http://dummyimage.com/120x240",
+        "status": "PAID",
+        "updatedAt": "2023-10-01T12:00:00Z",
+        "userId": "220000198905010279"
+    },
+    {
+        "amount": 789.01,
+        "billNumber": "BILL460000198312277466",
+        "createdAt": "2023-10-01T12:00:00Z",
+        "currency": "CAD",
+        "id": "460000198312277466",
+        "image": "http://dummyimage.com/120x90",
+        "status": "PAID",
+        "updatedAt": "2023-10-01T12:00:00Z",
+        "userId": "460000198312277466"
+    },
+    {
+        "amount": 890.12,
+        "billNumber": "BILL12000019721125457X",
+        "createdAt": "2023-10-01T12:00:00Z",
+        "currency": "CHF",
+        "id": "12000019721125457X",
+        "image": "http://dummyimage.com/120x60",
+        "status": "UNPAID",
+        "updatedAt": "2023-10-01T12:00:00Z",
+        "userId": "12000019721125457X"
+    },
+    {
+        "amount": 901.23,
+        "billNumber": "BILL520000200207275174",
+        "createdAt": "2023-10-01T12:00:00Z",
+        "currency": "INR",
+        "id": "520000200207275174",
+        "image": "http://dummyimage.com/120x60",
+        "status": "PAID",
+        "updatedAt": "2023-10-01T12:00:00Z",
+        "userId": "520000200207275174"
+    },
+    {
+        "amount": 12.34,
+        "billNumber": "BILL810000200710048664",
+        "createdAt": "2023-10-01T12:00:00Z",
+        "currency": "MXN",
+        "id": "810000200710048664",
+        "image": "http://dummyimage.com/120x240",
+        "status": "PAID",
+        "updatedAt": "2023-10-01T12:00:00Z",
+        "userId": "810000200710048664"
+    }
+]

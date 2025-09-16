@@ -1,0 +1,272 @@
+[
+    {
+        "description": "一款功能强大的智能手表，支持多种运动模式。",
+        "id": "340000199501129224",
+        "image": "https://mock-static.imock.pro/assets/images/goods/f5f11723bfcff51f379ea545a6d4599f.jpg",
+        "name": "智能手表",
+        "price": 999.99,
+        "stock": 1000
+    },
+    {
+        "description": "高品质无线耳机，提供清晰音质。",
+        "id": "430000197108271200",
+        "image": "https://mock-static.imock.pro/assets/images/goods/e5a396de56125e3735bee0d0494344d7.jpg",
+        "name": "无线耳机",
+        "price": 499.99,
+        "stock": 500
+    },
+    {
+        "description": "超大容量便携式充电宝，支持多设备充电。",
+        "id": "230000198304063115",
+        "image": "https://mock-static.imock.pro/assets/images/goods/7eaf3ac2cf3689113d64b62e775b0366.jpg",
+        "name": "便携式充电宝",
+        "price": 199.99,
+        "stock": 200
+    },
+    {
+        "description": "便携蓝牙音箱，音质出众。",
+        "id": "210000199409174912",
+        "image": "https://mock-static.imock.pro/assets/images/goods/2cc0c6b588554a91f9db936285846571.jpg",
+        "name": "蓝牙音箱",
+        "price": 299.99,
+        "stock": 300
+    },
+    {
+        "description": "时尚智能手环，实时监测健康数据。",
+        "id": "370000201002013847",
+        "image": "https://mock-static.imock.pro/assets/images/goods/1b465d09a33f85ce4d32defb7a723361.jpg",
+        "name": "智能手环",
+        "price": 299.99,
+        "stock": 700
+    },
+    {
+        "description": "轻巧折叠键盘，适合移动办公。",
+        "id": "530000198809218291",
+        "image": "https://mock-static.imock.pro/assets/images/goods/be0412d5090ffd3e6e7250d11a2bc005.jpg",
+        "name": "折叠键盘",
+        "price": 399.99,
+        "stock": 400
+    },
+    {
+        "description": "可调色温的智能灯泡，节能环保。",
+        "id": "130000198308023248",
+        "image": "https://mock-static.imock.pro/assets/images/goods/304c7d86f200c91c304440d72ed7e567.jpg",
+        "name": "智能灯泡",
+        "price": 99.99,
+        "stock": 800
+    },
+    {
+        "description": "远程控制的智能插座，方便实用。",
+        "id": "13000019770523663X",
+        "image": "https://mock-static.imock.pro/assets/images/goods/fd8f3170cb233a8be6ba299ae553a4db.jpg",
+        "name": "智能插座",
+        "price": 59.99,
+        "stock": 600
+    },
+    {
+        "description": "高清便携式投影仪，家庭娱乐好帮手。",
+        "id": "540000197804022211",
+        "image": "https://mock-static.imock.pro/assets/images/goods/4be6866a8006b80969c37cae049b7dfe.jpg",
+        "name": "便携式投影仪",
+        "price": 1299.99,
+        "stock": 150
+    },
+    {
+        "description": "指纹识别智能门锁，安全便捷。",
+        "id": "370000199905094537",
+        "image": "https://mock-static.imock.pro/assets/images/goods/594e658cedf31479ee78dde7b720bb65.jpg",
+        "name": "智能门锁",
+        "price": 899.99,
+        "stock": 250
+    },
+    {
+        "category": "电子产品",
+        "createdAt": "2023-04-01T10:00:00Z",
+        "description": "一款支持健康监测的智能手表",
+        "id": "350000197002078314",
+        "image": "https://mock-static.imock.pro/assets/images/goods/809668baac24681d7d1aee745d704206.jpg",
+        "name": "智能手表",
+        "price": 999,
+        "stock": 1000,
+        "updatedAt": "2023-04-01T10:00:00Z"
+    },
+    {
+        "category": "电子产品",
+        "createdAt": "2023-04-01T10:00:00Z",
+        "description": "一款轻便舒适的无线耳机",
+        "id": "530000201501157853",
+        "image": "https://mock-static.imock.pro/assets/images/goods/44e1e0c4c6d73c1591ec94f0388a14ec.jpg",
+        "name": "无线耳机",
+        "price": 499,
+        "stock": 1500,
+        "updatedAt": "2023-04-01T10:00:00Z"
+    },
+    {
+        "category": "服饰",
+        "createdAt": "2023-04-01T10:00:00Z",
+        "description": "适合跑步和健身的运动鞋",
+        "id": "330000201607148042",
+        "image": "https://mock-static.imock.pro/assets/images/goods/e5a396de56125e3735bee0d0494344d7.jpg",
+        "name": "运动鞋",
+        "price": 699,
+        "stock": 800,
+        "updatedAt": "2023-04-01T10:00:00Z"
+    },
+    {
+        "category": "家居",
+        "createdAt": "2023-04-01T10:00:00Z",
+        "description": "高品质保温杯，保持饮料温度",
+        "id": "410000199112308358",
+        "image": "https://mock-static.imock.pro/assets/images/goods/be0412d5090ffd3e6e7250d11a2bc005.jpg",
+        "name": "保温杯",
+        "price": 199,
+        "stock": 1200,
+        "updatedAt": "2023-04-01T10:00:00Z"
+    },
+    {
+        "category": "电子产品",
+        "createdAt": "2023-04-01T10:00:00Z",
+        "description": "大容量便携式充电宝，随时随地充电",
+        "id": "540000200606227421",
+        "image": "https://mock-static.imock.pro/assets/images/goods/5928160c6a2cb249241cebddc2b16393.jpg",
+        "name": "便携式充电宝",
+        "price": 299,
+        "stock": 900,
+        "updatedAt": "2023-04-01T10:00:00Z"
+    },
+    {
+        "category": "服饰",
+        "createdAt": "2023-04-01T10:00:00Z",
+        "description": "时尚手提包，适合各种场合",
+        "id": "710000202111148570",
+        "image": "https://mock-static.imock.pro/assets/images/goods/8958a69ff08a587756a29807378821c9.jpg",
+        "name": "手提包",
+        "price": 399,
+        "stock": 700,
+        "updatedAt": "2023-04-01T10:00:00Z"
+    },
+    {
+        "category": "家居",
+        "createdAt": "2023-04-01T10:00:00Z",
+        "description": "高效净化空气，保持室内清新",
+        "id": "350000201911149852",
+        "image": "https://mock-static.imock.pro/assets/images/goods/a2c125e9936df8fe2e295dbe8608caad.jpg",
+        "name": "空气净化器",
+        "price": 799,
+        "stock": 500,
+        "updatedAt": "2023-04-01T10:00:00Z"
+    },
+    {
+        "category": "美妆",
+        "createdAt": "2023-04-01T10:00:00Z",
+        "description": "高倍数防晒霜，保护皮肤免受紫外线伤害",
+        "id": "370000199107044981",
+        "image": "https://mock-static.imock.pro/assets/images/goods/1423b06be472d4951490193b1e7e6f94.jpg",
+        "name": "防晒霜",
+        "price": 150,
+        "stock": 1300,
+        "updatedAt": "2023-04-01T10:00:00Z"
+    },
+    {
+        "category": "家居",
+        "createdAt": "2023-04-01T10:00:00Z",
+        "description": "智能电动牙刷，帮助清洁牙齿",
+        "id": "990000200112268796",
+        "image": "https://mock-static.imock.pro/assets/images/goods/753dc4f100a2bd715c73da7ec98007de.jpg",
+        "name": "电动牙刷",
+        "price": 399,
+        "stock": 600,
+        "updatedAt": "2023-04-01T10:00:00Z"
+    },
+    {
+        "category": "服饰",
+        "createdAt": "2023-04-01T10:00:00Z",
+        "description": "多功能背包，满足日常需求",
+        "id": "520000200203268516",
+        "image": "https://mock-static.imock.pro/assets/images/goods/ea0c9f0a5b2563c3a246e12a6bee3ee5.jpg",
+        "name": "背包",
+        "price": 299,
+        "stock": 800,
+        "updatedAt": "2023-04-01T10:00:00Z"
+    },
+    {
+        "description": "这是一款优质商品。",
+        "id": "440000202208268397",
+        "image": "https://mock-static.imock.pro/assets/images/goods/fa1745578835767491c799fa91c465fb.jpg",
+        "name": "商品A",
+        "price": 199.99,
+        "stock": 120
+    },
+    {
+        "description": "这是一款高性能商品。",
+        "id": "71000020090125327X",
+        "image": "https://mock-static.imock.pro/assets/images/goods/0924047691982f987f32c26fcbae790a.jpg",
+        "name": "商品B",
+        "price": 299.99,
+        "stock": 80
+    },
+    {
+        "description": "这是一款经济型商品。",
+        "id": "310000197702171723",
+        "image": "https://mock-static.imock.pro/assets/images/goods/e5a396de56125e3735bee0d0494344d7.jpg",
+        "name": "商品C",
+        "price": 99.99,
+        "stock": 200
+    },
+    {
+        "description": "这是一款多功能商品。",
+        "id": "63000019790312432X",
+        "image": "https://mock-static.imock.pro/assets/images/goods/4be6866a8006b80969c37cae049b7dfe.jpg",
+        "name": "商品D",
+        "price": 499.99,
+        "stock": 50
+    },
+    {
+        "description": "这是一款便携式商品。",
+        "id": "370000201407307042",
+        "image": "https://mock-static.imock.pro/assets/images/goods/2865d5861a14a1b4fe173453fced98b6.jpg",
+        "name": "商品E",
+        "price": 149.99,
+        "stock": 150
+    },
+    {
+        "description": "这是一款耐用型商品。",
+        "id": "820000199212175464",
+        "image": "https://mock-static.imock.pro/assets/images/goods/1423b06be472d4951490193b1e7e6f94.jpg",
+        "name": "商品F",
+        "price": 399.99,
+        "stock": 70
+    },
+    {
+        "description": "这是一款创新性商品。",
+        "id": "310000199309012645",
+        "image": "https://mock-static.imock.pro/assets/images/goods/304c7d86f200c91c304440d72ed7e567.jpg",
+        "name": "商品G",
+        "price": 249.99,
+        "stock": 100
+    },
+    {
+        "description": "这是一款时尚型商品。",
+        "id": "14000019890118516X",
+        "image": "https://mock-static.imock.pro/assets/images/goods/753dc4f100a2bd715c73da7ec98007de.jpg",
+        "name": "商品H",
+        "price": 199.99,
+        "stock": 110
+    },
+    {
+        "description": "这是一款高性价比商品。",
+        "id": "510000202311234943",
+        "image": "https://mock-static.imock.pro/assets/images/goods/73e7e79c9f44451df684be83e7870fac.jpg",
+        "name": "商品I",
+        "price": 129.99,
+        "stock": 180
+    },
+    {
+        "description": "这是一款实用型商品。",
+        "id": "220000199110239381",
+        "image": "https://mock-static.imock.pro/assets/images/goods/44e1e0c4c6d73c1591ec94f0388a14ec.jpg",
+        "name": "商品J",
+        "price": 89.99,
+        "stock": 220
+    }
+]

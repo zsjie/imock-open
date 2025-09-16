@@ -1,0 +1,40 @@
+{
+  "name": "imock-open",
+  "version": "0.1.0",
+  "private": true,
+  "description": "开源 API Mock 平台 - Monorepo",
+  "license": "SEE LICENSE IN LICENSE",
+  "author": "iMock Team",
+  "keywords": ["api", "mock", "typescript", "react", "koa"],
+  "scripts": {
+    "dev": "./scripts/dev-docker.sh",
+    "build": "pnpm --filter=imock-server build && pnpm --filter=imock-web build:prod",
+    "build:server": "pnpm --filter=imock-server build",
+    "build:web": "pnpm --filter=imock-web build:prod",
+    "start": "pnpm --filter=imock-server start",
+    "lint": "pnpm --recursive lint",
+    "lint:fix": "pnpm --recursive lint:fix",
+    "test": "pnpm --recursive test",
+    "test:server": "pnpm --filter=imock-server test",
+    "test:web": "pnpm --filter=imock-web test",
+    "clean": "pnpm --recursive clean && rm -rf node_modules",
+    "clean:deps": "pnpm --recursive exec rm -rf node_modules && rm -rf node_modules",
+    "typecheck": "pnpm --recursive typecheck",
+    "db:generate": "pnpm --filter=imock-server db:generate",
+    "db:migrate": "pnpm --filter=imock-server db:migrate",
+    "db:studio": "pnpm --filter=imock-server db:studio",
+    "postinstall": "pnpm --filter=imock-server db:generate"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^7.18.0",
+    "@typescript-eslint/parser": "^7.18.0",
+    "eslint": "^9.11.0",
+    "prettier": "^3.3.3",
+    "typescript": "^5.4.5"
+  },
+  "engines": {
+    "node": ">=20.12.12",
+    "pnpm": ">=8.0.0"
+  },
+  "packageManager": "pnpm@8.15.0"
+}
