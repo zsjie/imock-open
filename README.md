@@ -41,7 +41,7 @@
 ### 2. 克隆项目
 
 ```bash
-git clone <https://github.com/your-username/imock-open.git>
+git clone git@github.com:zsjie/imock-open.git
 cd imock-open
 ```
 
