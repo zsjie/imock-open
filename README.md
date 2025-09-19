@@ -55,6 +55,8 @@ cd imock-open
 
 打开浏览器访问 `http://localhost:3010`
 
+<img src="https://mock-static.imock.pro/assets/images/imock-demo.png" width="600" alt="imock demo" />
+
 ## 🔧 开发指南
 
 ### 项目结构
