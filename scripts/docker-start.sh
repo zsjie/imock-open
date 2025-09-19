@@ -20,9 +20,9 @@ if ! command -v docker compose &> /dev/null; then
     exit 1
 fi
 
-# 检查 docker-compose.yml 是否存在
-if [ ! -f "docker-compose.yml" ]; then
-    echo "❌ 错误: 找不到 docker-compose.yml 或 docker-compose.example.yml"
+# 检查 docker-compose.prod.yml 是否存在
+if [ ! -f "docker-compose.prod.yml" ]; then
+    echo "❌ 错误: 找不到 docker-compose.prod.yml"
     exit 1
 fi
 

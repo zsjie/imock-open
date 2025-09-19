@@ -76,7 +76,8 @@ imock-open/
 │   │   ├── services/     # API 服务
 │   │   └── utils/        # 工具函数
 │   └── package.json
-└── docker-compose.yml     # Docker 配置
+├── docker-compose.dev.yml     # Docker 开发环境配置
+└── docker-compose.prod.yml     # Docker 生产环境配置
 ```
 
 ## 📝 许可证
